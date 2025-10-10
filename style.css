@@ -1,0 +1,20 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background-color: #0f0f0f; color: #fff; text-align: center;
+}
+
+header { padding: 30px 20px; }
+nav a { color: #00FF7F; margin: 0 15px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+
+h1 { margin: 10px 0; font-size: 2em; }
+.tagline { color: #ccc; font-style: italic; }
+main { padding: 30px 20px; }
+ul { list-style: none; padding: 0; }
+ul li { margin: 15px 0; }
+img { max-width: 100%; }
+.profile-img { width: 120px; height: 120px; border-radius: 50%; margin-bottom: 15px; }
+footer { padding: 20px; color: #888; }
+blockquote { font-style: italic; margin: 20px 0; }
+blockquote footer { font-size: 0.9em; color: #aaa; margin-top: 5px; }
