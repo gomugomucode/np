@@ -1,39 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="p:domain_verify" content="825de0fbf22f187aa97b3a006b850880"/>
-<title>Anupam Baral</title>
-<link rel="stylesheet" href="style.css">
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anupam Baral — Minimalist Developer & BCA Student</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="I'm Anupam Baral — a minimalist developer, BCA student,and system builder exploring the intersection of simplicity and technology. I craft simple, efficient tools that bridge creativity and technology." />
+  <meta name="keywords" content="Anupam Baral, BCA student, web developer, minimalist portfolio, AI tools, Express.js projects, Nepal developer ,, Medium blog, tech writer" />
+  <meta name="author" content="Anupam Baral" />
+
+  <!-- Open Graph (for better SEO and social sharing) -->
+  <meta property="og:title" content="Anupam Baral | Minimalist Developer">
+  <meta property="og:description" content="Minimalist developer • BCA student • system builder. Discover my projects, ideas, and blogs on tech & online growth.">
+  <meta property="og:image" content="https://gomugomucode.github.io/np/assets/profile.jpg">
+  <meta property="og:url" content="https://gomugomucode.github.io/np/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anupam Baral | Minimalist Developer">
+  <meta name="twitter:description" content="Sharing thoughts on coding, tech, and systems that last.">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/profile.jpg">
+
+ <title>Anupam Baral — Minimalist Developer & BCA Student</title>
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://emojiapi.dev/api/v1/laptop.svg" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anupam Baral",
+    "url": "https://yourdomain.com/",
+    "sameAs": [
+      "https://github.com/gomugomucode",
+      "https://www.linkedin.com/in/unish06/",
+      "https://medium.com/@gomugomucode"
+    ],
+    "jobTitle": "Developer",
+    "alumniOf": "Bachelor of Computer Applications (BCA)",
+    "description": "Minimalist developer building systems that blend simplicity and intelligence."
+  }
+  </script>
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --text: #e0e0e0;
+      --accent: #00ff99;
+      --hover: #0ff;
+      --soft: #111;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Fira Code', monospace;
+      text-align: center;
+      line-height: 1.7;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 20px rgba(0,255,153,0.2);
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0,255,153,0.5);
+    }
+
+    h1 {
+      color: var(--accent);
+      font-size: 1.9em;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      font-size: 0.9em;
+      color: #999;
+      margin-bottom: 25px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #aaa;
+      font-weight: 500;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      text-shadow: 0 0 8px var(--accent);
+    }
+
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeIn 2s ease;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #bbb;
+      border-left: 2px solid var(--accent);
+      padding-left: 12px;
+      margin: 25px auto;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 35px;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    li {
+      background: var(--soft);
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #1a1a1a;
+      transition: all 0.25s ease;
+    }
+
+    li:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 10px rgba(0,255,153,0.2);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.8em;
+      color: #666;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--hover);
+      text-shadow: 0 0 8px var(--hover);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5em; }
+      nav a { display: inline-block; margin: 8px; }
+      li { font-size: 0.9em; }
+    }
+  </style>
 </head>
+
 <body>
-<header>
+  <header>
     <img src="assets/profile.jpg" alt="Anupam" class="profile-img">
     <h1>&gt;_ anupam.sh</h1>
     <p class="tagline">minimalist developer • BCA student • system builder</p>
-</header>
+  </header>
 
-<nav>
+  <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
-</nav>
+    <a href="https://medium.com/@gomugomucode" target="_blank">Blog</a>
+  </nav>
 
-<main>
+  <main>
     <blockquote>“Simplicity isn’t about less. It’s about knowing what truly matters.”</blockquote>
 
     <h2>Current Focus</h2>
     <ul>
-        <li>Learning: Express.js & backend scaling</li>
-        <li>Project: Minimal dev tools + AI utilities</li>
-        <li>Exploring: Cloud workflows & automation</li>
+      <li>Learning: Express.js & backend scaling</li>
+      <li>Building: Minimal dev tools + AI utilities</li>
+      <li>Exploring: Cloud workflows & automation</li>
     </ul>
-</main>
+  </main>
 
-<footer>
-    <p>© 2025 Anupam Baral • Dark mode forever</p>
-</footer>
+  <footer>
+    <p>© 2025 <a href="https://github.com/gomugomucode" target="_blank">Anupam Baral</a> • Dark mode forever 🌙</p>
+  </footer>
 </body>
 </html>
