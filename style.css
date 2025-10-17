@@ -202,16 +202,26 @@ button:hover {
   fill: var(--hover);
 }
 
-/* Footer */
+/* === Unified Footer Style === */
 footer {
-  padding: 25px;
-  color: #666;
+  padding: 30px 10px;
+  color: #777;
   font-size: 0.85em;
+  border-top: 1px solid #111;
+  margin-top: 40px;
+  background: linear-gradient(to bottom, #0d0d0d 70%, #0b0b0b);
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  letter-spacing: 0.3px;
 }
 
 footer a {
   color: var(--accent);
   text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 footer a:hover {
@@ -219,10 +229,114 @@ footer a:hover {
   text-shadow: 0 0 6px var(--hover);
 }
 
+/* Social Icons Row */
+.footer-social {
+  margin: 12px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-2px) scale(1.1);
+}
+
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsi*
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 1.6em; }
+  nav a { display: inline-block; margin: 8px; }
+  li { font-size: 0.9em; }
+  .contact-form { width: 90%; }
+  .contact-links { flex-direction: column; gap: 15px; }
+}
+
+/* === Unified Page Styling === */
+
+/* Section Headings */
+h2 {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Quotes (blockquotes) */
+blockquote {
+  font-style: italic;
+  color: #bbb;
+  border-left: 2px solid var(--accent);
+  background: #111;
+  padding: 10px 15px;
+  margin: 30px auto;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0,255,153,0.1);
+  max-width: 600px;
+}
+
+blockquote::before {
+  content: "“";
+  color: var(--accent);
+  font-size: 1.6em;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+blockquote::after {
+  content: "”";
+  color: var(--accent);
+  font-size: 1.6em;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+/* Paragraphs & Content Tone */
+p {
+  color: #ccc;
+  font-size: 1em;
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+/* Accent Lists (for project/skills sections) */
+ul li strong {
+  color: var(--accent);
+}
+
+ul li::before {
+  content: "▹ ";
+  color: var(--accent);
+}
+
+/* Subtle Glow Hover for Links */
+a:hover {
+  text-shadow: 0 0 8px var(--accent);
+}
+
+/* Section spacing consistency */
+section {
+  margin-bottom: 40px;
+}
+
+/* Footer Enhancements */
+footer {
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+  color: #777;
+}

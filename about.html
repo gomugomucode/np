@@ -4,23 +4,104 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About - Anupam Baral</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="About Anupam Baral — minimalist developer, BCA student, and system builder exploring backend, AI workflows, and cloud automation.">
+<meta name="keywords" content="Anupam Baral, developer, BCA student, Express.js, backend, AI, automation, tech blog">
+<meta name="author" content="Anupam Baral">
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+    /* === About Page Adjustments === */
+.intro {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.skills {
+  margin-top: 10px; /* Reduce top spacing */
+  padding-top: 10px;
+}
+
+.skills h2 {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills img {
+  margin-top: 10px;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 153, 0.15));     
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skills img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 12px rgba(0, 255, 153, 0.3));
+}
+
+/* Optional: add subtle fade-in */
+.skills, .intro, .quote-end {
+  animation: fadeIn 1.6s ease;
+}
+
+.quote-end {
+  margin-top: 30px;
+  font-style: italic;
+  color: #999;
+}
+
+</style>
 </head>
+
 <body>
 <header>
-    <h1>About Me</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <img src="assets/profile.jpg" alt="Anupam Baral" class="profile-img">
+    <h1>&gt;_ about.sh</h1>
+    <p class="tagline">curious mind • clean code • quiet progress</p>
 </header>
 
-<main>
-    <p>I’m <strong>Anupam Baral</strong>, a developer who follows the <em>Unix philosophy</em>: small, composable, and purposeful tools. Currently exploring Express.js, AI workflows, automation, and cloud systems.</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://medium.com/@gomugomucode" target="_blank">Blog</a>
+</nav>
 
-    <h2>Tech Stack</h2>
-    <img src="https://skillicons.dev/icons?i=python,flask,java,c,js,nodejs,express,django,react,tailwind,html,css,mysql,php,linux,git&perline=7" alt="Tech icons">
+<main>
+    <section class="intro">
+        <blockquote>“In code, as in life — elegance comes from clarity, not complexity.”</blockquote>
+        <p>I’m <strong>Anupam Baral</strong>, a minimalist developer who believes every line of code should serve a purpose.  
+        My philosophy mirrors the <em>Unix way</em> — build small, powerful tools that work together beautifully.</p>
+        
+        <p>Currently exploring <strong>Express.js</strong>, <strong>AI automation</strong>, and <strong>cloud workflow design</strong> to bridge creativity with system efficiency.</p>
+    </section>
+
+    <section class="skills">
+        <h2>🛠️ Tech Stack</h2>
+        <br/>
+        <img src="https://skillicons.dev/icons?i=python,flask,java,c,js,nodejs,express,django,react,tailwind,html,css,mysql,php,linux,git&perline=7" alt="Tech stack icons showing programming skills">
+    </section>
+
+    <section class="quote-end">
+        <p>“Learning never stops; it only evolves.”</p>
+    </section>
 </main>
+
+ <footer>
+  <div class="footer-social">
+    <a href="https://github.com/gomugomucode" target="_blank">GitHub</a> •
+    <a href="https://www.linkedin.com/in/unish06/" target="_blank">LinkedIn</a> •
+    <a href="https://medium.com/@gomugomucode" target="_blank">Blog</a>
+  </div>
+  <p>© 2025 <a href="https://gomugomucode.github.io/np/">Anupam Baral</a> • crafted with curiosity ⚙️</p>
+</footer>
 </body>
 </html>

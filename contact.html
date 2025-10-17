@@ -1,178 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Anupam Baral</title>
-<link rel="stylesheet" href="style.css">
-<style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f0f0f;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Anupam Baral</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-header {
-    padding: 30px 20px;
-}
+        header {
+            padding: 30px 20px;
+        }
 
-nav a {
-    color: #00FF7F;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+        nav a {
+            color: #00FF7F;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-nav a:hover { color: #0ff; }
+        nav a:hover {
+            color: #0ff;
+        }
 
-main { padding: 30px 20px; }
+        main {
+            padding: 30px 20px;
+        }
 
-/* Contact Links */
-.contact-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-bottom: 30px;
-}
+        /* Contact Links */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
 
-.contact-links a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.3s, transform 0.2s;
-}
+        .contact-links a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s, transform 0.2s;
+        }
 
-.contact-links a svg {
-    width: 24px;
-    height: 24px;
-    fill: #00FF7F;
-    transition: fill 0.3s;
-}
+        .contact-links a svg {
+            width: 24px;
+            height: 24px;
+            fill: #00FF7F;
+            transition: fill 0.3s;
+        }
 
-.contact-links a:hover {
-    color: #0ff;
-    transform: translateY(-3px);
-}
+        .contact-links a:hover {
+            color: #0ff;
+            transform: translateY(-3px);
+        }
 
-.contact-links a:hover svg {
-    fill: #0ff;
-}
+        .contact-links a:hover svg {
+            fill: #0ff;
+        }
 
-/* Contact Form */
-.contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-top: 6px;
-    padding: 20px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    background-color: #111;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        /* Contact Form */
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 6px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            background-color: #111;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.contact-form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,255,127,0.3);
-}
+        .contact-form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 127, 0.3);
+        }
 
-.contact-form h2 {
-    margin-bottom: 20px;
-    color: #00FF7F;
-}
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #00FF7F;
+        }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #0f0f0f;
-    color: #fff;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #0f0f0f;
+            color: #fff;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
 
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #00FF7F;
-    box-shadow: 0 0 5px #00FF7F;
-}
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #00FF7F;
+            box-shadow: 0 0 5px #00FF7F;
+        }
 
-button {
-    padding: 12px 25px;
-    background-color: #00FF7F;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
+        button {
+            padding: 12px 25px;
+            background-color: #00FF7F;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
 
-button:hover {
-    background-color: #0ff;
-    transform: scale(1.05);
-}
+        button:hover {
+            background-color: #0ff;
+            transform: scale(1.05);
+        }
 
-/* Responsive */
-@media(max-width:600px){
-    nav a { display:block; margin:10px 0; }
-    .contact-form { width:90%; }
-    .contact-links { flex-direction: column; gap: 15px; }
-}
-</style>
+        /* Responsive */
+        @media(max-width:600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .contact-form {
+                width: 90%;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header>
-    <h1>Contact</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-    </nav>
-</header>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="https://medium.com/@gomugomucode" target="_blank">Blog</a>
+        </nav>
+    </header>
 
-<main>
-    <section class="contact-links">
-        <a href="https://github.com/gomugomucode" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.1-.7.1-.7-.7-.3-1.4-.9-1.4-2 0-.5.2-1 .6-1.4-.1-.3-.3-1.2.1-2.5 0 0 .5-.2 1.7 1.1.5-.2 1.1-.3 1.7-.3s1.2.1 1.7.3c1.2-1.3 1.7-1.1 1.7-1.1.4 1.3.2 2.2.1 2.5.4.4.6.9.6 1.4 0 1.1-.7 1.7-1.4 2 .1.1.2.6.2 1.1v1.6c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.65 18.35.5 12 .5z"/></svg>
-            GitHub
-        </a>
+    <main>
+        <section class="contact-links">
+            <a href="https://github.com/gomugomucode" target="_blank">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.1-.7.1-.7-.7-.3-1.4-.9-1.4-2 0-.5.2-1 .6-1.4-.1-.3-.3-1.2.1-2.5 0 0 .5-.2 1.7 1.1.5-.2 1.1-.3 1.7-.3s1.2.1 1.7.3c1.2-1.3 1.7-1.1 1.7-1.1.4 1.3.2 2.2.1 2.5.4.4.6.9.6 1.4 0 1.1-.7 1.7-1.4 2 .1.1.2.6.2 1.1v1.6c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.65 18.35.5 12 .5z" />
+                </svg>
+                GitHub
+            </a>
 
-        <a href="https://www.linkedin.com/in/unish06/" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48c0 1.64 1.34 2.98 2.98 2.98 1.64 0 2.98-1.34 2.98-2.98C7.96 4.84 6.62 3.5 4.98 3.5zM2.4 21.5h5.2v-9.6H2.4v9.6zM9.4 11.9h4.9v1.3h.1c.7-1.3 2.3-2.6 4.7-2.6 5 0 5.9 3.3 5.9 7.6v8.3h-5.2v-7.4c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8v7.5h-5.2v-15z"/></svg>
-            LinkedIn
-        </a>
+            <a href="https://www.linkedin.com/in/unish06/" target="_blank">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48c0 1.64 1.34 2.98 2.98 2.98 1.64 0 2.98-1.34 2.98-2.98C7.96 4.84 6.62 3.5 4.98 3.5zM2.4 21.5h5.2v-9.6H2.4v9.6zM9.4 11.9h4.9v1.3h.1c.7-1.3 2.3-2.6 4.7-2.6 5 0 5.9 3.3 5.9 7.6v8.3h-5.2v-7.4c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8v7.5h-5.2v-15z" />
+                </svg>
+                LinkedIn
+            </a>
 
-        <a href="mailto:alinedtwins@gmail.com">
-            <svg viewBox="0 0 24 24"><path d="M12 12.713l-11.713-7.713h23.426L12 12.713zM0 5.5v13h24v-13l-12 7.936L0 5.5z"/></svg>
-            Email
-        </a>
+            <a href="mailto:alinedtwins@gmail.com">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 12.713l-11.713-7.713h23.426L12 12.713zM0 5.5v13h24v-13l-12 7.936L0 5.5z" />
+                </svg>
+                Email
+            </a>
 
-        <a href="https://medium.com/@gomugomucode" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M2 4h20v16H2z"/></svg>
-            Medium
-        </a>
-<br/>
-       <a href="https://www.buymeacoffee.com/unish06" target="_blank">
-            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200"/>
-        </a>
-    </section>
+            <a href="https://medium.com/@gomugomucode" target="_blank">
+                <svg viewBox="0 0 24 24">
+                    <path d="M2 4h20v16H2z" />
+                </svg>
+                Medium
+            </a>
+            <br />
+            <a href="https://www.buymeacoffee.com/unish06" target="_blank">
+                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+                    width="200" />
+            </a>
+        </section>
 
-    <section class="contact-form">
-        <h2>Send Me a Message</h2>
-        <form action="https://formsubmit.co/your-email@example.com" method="POST">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-</main>
+        <section class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/gomugomucode" target="_blank">GitHub</a> •
+            <a href="https://www.linkedin.com/in/unish06/" target="_blank">LinkedIn</a> •
+            <a href="https://medium.com/@gomugomucode" target="_blank">Blog</a>
+            <a href="mailto:alinedtwins@gmail.com">Email</a>
+
+        </div>
+        <p>© 2025 <a href="https://gomugomucode.github.io/np/">Anupam Baral</a> • crafted with curiosity ⚙️</p>
+    </footer>
 </body>
+
 </html>
